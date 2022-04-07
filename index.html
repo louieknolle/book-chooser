@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Book genre quiz</title>
+</head>
+<body>
+  <div class="container">
+    <h1>What genre of book should I read next?</h1>
+    
+    <p>Fill out the form below, hit "submit" and we will determine the genre of the next book you should read!</p>
+
+    <form id="aboutYou">
+      <label for="age">How old are you?</label>
+      <input id="age" type="text" validate>
+      <label for="gender">Gender</label>
+      <select name="" id="gender" validate>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="nB">Non-binary</option>
+      </select>
+      <label for="season">Favorite season</label>
+      <select name="" id="season" validate>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="fall">Fall</option>
+        <option value="winter">Winter</option>
+      </select>
+
+      <button type="submit" class="btn1">Show me the genre!</button>
+    </form>
+
+    <div id="genre">
+      <p>Your next book should be from the <span id="recommend"></span></p> genre! Happy reading you bibliophile!
+    </div>
+    
+  </div>
+</body>
+</html>
